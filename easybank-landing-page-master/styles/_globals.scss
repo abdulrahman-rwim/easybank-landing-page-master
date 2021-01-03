@@ -1,0 +1,65 @@
+@import "varibles";
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+%padding {
+  padding: 5em 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+body::-webkit-scrollbar-track {
+  background: hsl(233, 8%, 62%);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(233, 26%, 24%);
+}
+h1::selection,
+h2::selection,
+span::selection,
+a::selection,
+p::selection {
+  color: #fff;
+  background: hsl(136, 65%, 51%);
+}
+
+section {
+  @extend %padding;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 7.7%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient($Dark-Blue, transparent);
+}

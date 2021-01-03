@@ -1,0 +1,35 @@
+.feature {
+  background: $Light-Grayish-Blue;
+  text-align: center;
+
+  .feature__title {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    color: $Dark-Blue;
+    font-weight: 400;
+  }
+  p {
+    color: $Grayish-Blue;
+    line-height: 1.6;
+  }
+
+  &__header {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+.feature__intro {
+  flex: 1 0 100%;
+}
+.feature__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  .feature__flex {
+    flex: 1 0 300px;
+  }
+}

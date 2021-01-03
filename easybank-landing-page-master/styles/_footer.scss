@@ -1,0 +1,51 @@
+@import "varibles";
+.footer {
+  background: $Dark-Blue;
+
+  // footer container
+
+  &__container {
+    padding-top: 1.5em;
+    text-align: center;
+
+    .f-logo {
+      width: 160px;
+      margin: 2.2em 0;
+    }
+
+    img {
+      width: 30px;
+      margin: 0 0.4em 1em 0.4em;
+    }
+
+    a {
+      display: inline-block;
+    }
+    span {
+      display: inline-block;
+      color: $Grayish-Blue;
+      margin: 3em 0;
+    }
+  }
+
+  //footer nav menu
+
+  &__nav {
+    a {
+      color: $White;
+      display: block;
+      font-size: 1.1rem;
+      margin: 1.1em 0;
+      &:hover {
+        color: $Lime-Green;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  //footer button
+
+  &__btn {
+    margin-top: 1em;
+  }
+}

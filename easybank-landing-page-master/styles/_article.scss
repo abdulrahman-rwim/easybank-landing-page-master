@@ -1,0 +1,45 @@
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 25px;
+
+  &__text {
+    h2:hover {
+      color: $Lime-Green;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    padding: 2em;
+  }
+  img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 250px;
+  }
+  h2 {
+    color: $Dark-Blue;
+    font-weight: 400;
+  }
+
+  p {
+    color: $Grayish-Blue;
+    line-height: 1.6;
+  }
+  span {
+    display: inline-block;
+    color: $Grayish-Blue;
+    font-size: 0.9rem;
+    margin-top: 1em;
+  }
+}
+.article__item {
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+  margin: 1em 0;
+}
+.article__head {
+  text-align: center;
+  font-weight: 400;
+  color: $Dark-Blue;
+  font-size: 2.7rem;
+  margin-bottom: 0;
+}

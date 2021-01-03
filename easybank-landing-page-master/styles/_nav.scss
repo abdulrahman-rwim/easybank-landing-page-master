@@ -1,0 +1,99 @@
+@import "varibles";
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  //nav-menu
+
+  &__menu {
+    width: 80%;
+    padding: 1em;
+    display: none;
+    background: $White;
+    border-radius: 8px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    //nav logo
+  }
+  &__logo {
+    width: 150px;
+  }
+  //nav toggle
+
+  &__toggle {
+    display: none;
+
+    //nav toggle checked make the nav menu display as a block level element
+
+    &:checked ~ .nav__menu {
+      display: block;
+    }
+  }
+  //nav link
+
+  &__link {
+    display: block;
+    font-size: 1.1rem;
+    color: $Grayish-Blue;
+    padding: 0.6em 0;
+    position: relative;
+
+    //nav link on hover
+
+    &:hover {
+      color: $Dark-Blue;
+      transition: all 0.5s;
+    }
+
+    //nav link before
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 40%;
+      bottom: 0;
+      width: 21%;
+      height: 0.2em;
+      background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+      transform: scaleX(0);
+      transform-origin: left;
+      opacity: 0;
+      transition: all 0.5s;
+    }
+    //nav link before on hover
+
+    &:hover::before {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+  }
+
+  //nav button
+
+  &__btn {
+    display: none;
+    color: $White;
+    background: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0.6em 2em;
+    border-radius: 50px;
+    opacity: 1;
+    transform: scaleX(1);
+    transition: all 0.3s ease-in-out;
+
+    //nav button on hover
+
+    &:hover {
+      transform: scaleX(1.1);
+      opacity: 0.8;
+    }
+  }
+}
