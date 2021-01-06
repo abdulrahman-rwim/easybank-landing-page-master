@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 25px;
+  padding-bottom: 3em;
+
+  &__item {
+    align-items: flex-start;
+  }
 
   &__text {
     h2:hover {
@@ -9,7 +14,7 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-    padding: 2em;
+    padding: 1.5em 1.5em 0.5em 1.5em;
   }
   img {
     border-radius: 10px 10px 0 0;
@@ -38,8 +43,8 @@
 }
 .article__head {
   text-align: center;
+  margin: 1em 0;
   font-weight: 400;
   color: $Dark-Blue;
   font-size: 2.7rem;
-  margin-bottom: 0;
 }

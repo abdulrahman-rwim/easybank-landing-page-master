@@ -240,10 +240,17 @@ label span:last-child {
   -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 25px;
+  padding-bottom: 3em;
+}
+
+.article__item {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .article__text {
-  padding: 2em;
+  padding: 1.5em 1.5em 0.5em 1.5em;
 }
 
 .article__text h2:hover {
@@ -284,10 +291,10 @@ label span:last-child {
 
 .article__head {
   text-align: center;
+  margin: 1em 0;
   font-weight: 400;
   color: #2d314d;
   font-size: 2.7rem;
-  margin-bottom: 0;
 }
 
 .hero {
@@ -485,13 +492,12 @@ label span:last-child {
   }
   .hero__text {
     padding-top: 5em;
-    width: 60%;
-  }
-  .article h3 {
-    width: 100%;
-    text-align: left;
+    width: 50%;
   }
   .feature {
+    text-align: left;
+  }
+  .article__head {
     text-align: left;
   }
   .footer__container {

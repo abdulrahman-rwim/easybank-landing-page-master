@@ -57,18 +57,16 @@
     }
     &__text {
       padding-top: 5em;
-      width: 60%;
-    }
-  }
-  .article {
-    h3 {
-      width: 100%;
-      text-align: left;
+      width: 50%;
     }
   }
   .feature {
     text-align: left;
   }
+  .article__head {
+    text-align: left;
+  }
+
   .footer__container {
     text-align: left;
     display: grid;
