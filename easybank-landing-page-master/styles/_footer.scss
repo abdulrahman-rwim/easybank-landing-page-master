@@ -7,6 +7,29 @@
   &__container {
     padding-top: 1.5em;
     text-align: center;
+    @media (min-width: 700px) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(3, 4.2em);
+      .footer__social {
+        grid-row: 3;
+        grid-column: span 2;
+      }
+      .footer__btn {
+        grid-column: 7;
+      }
+      span {
+        grid-column: 7;
+        grid-row: 2;
+      }
+      .footer__nav1 {
+        grid-column: 3/4;
+      }
+      .footer__nav2 {
+        grid-column: 5/6;
+      }
+    }
 
     .f-logo {
       width: 160px;

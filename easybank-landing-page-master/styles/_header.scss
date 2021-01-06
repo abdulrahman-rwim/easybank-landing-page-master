@@ -4,4 +4,7 @@
   background: $White;
   position: relative;
   z-index: 10;
+  @media (min-width: 700px) {
+    padding: 0.3em 0;
+  }
 }

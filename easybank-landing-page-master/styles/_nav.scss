@@ -20,6 +20,12 @@
     left: 0;
     right: 0;
     z-index: 2;
+    @media (min-width: 600px) {
+      display: unset;
+      position: static;
+      width: 50%;
+      flex-wrap: wrap;
+    }
     //nav logo
   }
   &__logo {
@@ -44,6 +50,10 @@
     color: $Grayish-Blue;
     padding: 0.6em 0;
     position: relative;
+    @media (min-width: 700px) {
+      display: inline-block;
+      margin: 0 1em;
+    }
 
     //nav link on hover
 
@@ -66,6 +76,11 @@
       transform-origin: left;
       opacity: 0;
       transition: all 0.5s;
+      @media (min-width: 700px) {
+        width: 100%;
+        bottom: -50%;
+        left: 0;
+      }
     }
     //nav link before on hover
 
@@ -88,6 +103,9 @@
     opacity: 1;
     transform: scaleX(1);
     transition: all 0.3s ease-in-out;
+    @media (min-width: 700px) {
+      display: inline-block;
+    }
 
     //nav button on hover
 
