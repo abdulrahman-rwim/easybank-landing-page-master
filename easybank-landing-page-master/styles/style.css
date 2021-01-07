@@ -187,6 +187,8 @@ label span:last-child {
 
 @media (min-width: 700px) {
   .nav__menu {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     display: unset;
     position: static;
     width: 50%;
