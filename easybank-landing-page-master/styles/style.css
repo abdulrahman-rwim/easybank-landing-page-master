@@ -70,7 +70,12 @@ img {
 }
 
 .overlay {
-  display: none;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   position: fixed;
   z-index: 1;
   top: 7.7%;
@@ -129,7 +134,8 @@ label span:last-child {
 }
 
 #menu:checked + label + .nav__menu + .overlay {
-  display: block;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .header {
@@ -162,7 +168,12 @@ label span:last-child {
 .nav__menu {
   width: 80%;
   padding: 1em;
-  display: none;
+  -webkit-transform: scale(0.5, 0);
+          transform: scale(0.5, 0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   background: white;
   border-radius: 8px;
   text-align: center;
@@ -193,7 +204,8 @@ label span:last-child {
 }
 
 .nav__toggle:checked ~ .nav__menu {
-  display: block;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 
 .nav__link {
@@ -348,6 +360,7 @@ label span:last-child {
 
 .hero {
   padding: 0 0 2em 0;
+  position: relative;
   background: #fafafa;
 }
 
@@ -363,6 +376,7 @@ label span:last-child {
 
 .hero__content {
   text-align: center;
+  position: relative;
 }
 
 @media (min-width: 700px) {
