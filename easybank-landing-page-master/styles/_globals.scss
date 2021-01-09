@@ -53,14 +53,3 @@ img {
   margin: 0 auto;
   padding: 0 1em;
 }
-.overlay {
-  transform: scale(1, 0);
-  transition: transform 0.4s ease-in-out;
-  position: fixed;
-  z-index: 1;
-  top: 7.7%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: linear-gradient($Dark-Blue, transparent);
-}

@@ -32,5 +32,6 @@ label {
   transform: rotate(-45deg);
 }
 #menu:checked + label + .nav__menu + .overlay {
-  transform: scale(1, 1);
+  opacity: 1;
+  visibility: visible;
 }

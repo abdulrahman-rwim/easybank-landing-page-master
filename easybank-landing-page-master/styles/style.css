@@ -69,23 +69,6 @@ img {
   padding: 0 1em;
 }
 
-.overlay {
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-  -webkit-transition: -webkit-transform 0.4s ease-in-out;
-  transition: -webkit-transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out;
-  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  position: fixed;
-  z-index: 1;
-  top: 7.7%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
-  background: linear-gradient(#2d314d, transparent);
-}
-
 label {
   cursor: pointer;
   padding: 1em;
@@ -134,21 +117,36 @@ label span:last-child {
 }
 
 #menu:checked + label + .nav__menu + .overlay {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+  opacity: 1;
+  visibility: visible;
 }
 
 .header {
   padding: 1.1em;
   background: white;
   position: relative;
-  z-index: 10;
+  z-index: 999;
 }
 
 @media (min-width: 700px) {
   .header {
     padding: 0.3em 0;
   }
+}
+
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  position: fixed;
+  z-index: -1;
+  top: 7.7%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background: linear-gradient(#2d314d, transparent);
 }
 
 .nav {
@@ -170,10 +168,10 @@ label span:last-child {
   padding: 1em;
   -webkit-transform: scale(0.5, 0);
           transform: scale(0.5, 0);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
   background: white;
   border-radius: 8px;
   text-align: center;
